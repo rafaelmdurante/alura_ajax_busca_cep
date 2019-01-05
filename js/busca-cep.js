@@ -25,6 +25,7 @@ function buscaCep() {
     if (xhr.readyState == 4) {
       // Verificar se foi bem sucedida
       if (xhr.status == 200) {
+        // Aciona função Preenche Campos com o retorno do JSON
         preencheCampos(JSON.parse(xhr.responseText));
       }
     }
